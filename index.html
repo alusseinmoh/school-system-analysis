@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحليل نظام مدرسي — الهيكل الموحّد</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button id="toggleSidebar" class="icon-btn" title="الفهرس">☰</button>
+  <div class="topbar-titles">
+    <h1>تحليل نظام مدرسي — الهيكل الموحّد</h1>
+    <p>الهيكل الأصلي + التعديلات المقترحة</p>
+  </div>
+  <input type="search" id="searchBox" placeholder="بحث في العناوين...">
+</header>
+
+<div class="legend">
+  <span class="badge badge-new">إضافة مقترحة</span>
+  <span class="badge badge-moved">نُقل / دُمج</span>
+  <span class="legend-text">عدد العناصر: <b id="itemCount"></b></span>
+</div>
+
+<div class="layout">
+  <nav id="sidebar" class="sidebar"></nav>
+  <main id="content" class="content"></main>
+</div>
+
+<footer class="footer">تحليل نظام مدرسي</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
